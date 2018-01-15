@@ -1,6 +1,6 @@
 # EverPrayer
 
-This project is an example bot for Messenger Platform built in Node.js. With this app, you can request prayers and it will return a random prayer to you out of [this list](http://www.prayingeachday.org/100Prayers.pdf).
+This project is an example bot for Messenger Platform built in Node.js. With this app, you can request prayers and it will output a random prayer.
 
 It contains the following functionality:
 
