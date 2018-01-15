@@ -453,7 +453,7 @@ function sendHiMessage(recipientId) {
       id: recipientId
     },
     message: {
-      text: "Welcome to EveryPrayer",
+      text: "Welcome to EveryPrayer — Making the world a better place, one prayer at a time",
       quick_replies: [
         {
           "content_type":"text",
