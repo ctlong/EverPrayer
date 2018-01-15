@@ -262,8 +262,13 @@ function receivedMessage(event) {
         sendHiMessage(senderID);
         break;
       case 'send prayer':
+      case 'prayer':
         var prayer = prayers[Math.floor(Math.random()*prayers.length)];
+        console.log(prayer);
         sendTextMessage(senderID, prayer);
+        break;
+      case 'amen':
+        sendTextMessage(senderID, "Amen");
         break;
 
       // case 'image':
@@ -319,7 +324,7 @@ function receivedMessage(event) {
       //   break;
 
       default:
-        sendTextMessage(senderID, "Not echoing anymore! Add custom line");
+        sendTextMessage(senderID, "Type 'Send Prayer' or 'Prayer' to get a new prayer");
     }
   } else if (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
@@ -448,9 +453,7 @@ function sendHiMessage(recipientId) {
       id: recipientId
     },
     message: {
-      text: `
-Welcome to EveryPrayer
-      `,
+      text: "Welcome to EveryPrayer",
       quick_replies: [
         {
           "content_type":"text",
